@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>ebola: data release</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="icon" type="image/ico" href="http://fathom.info/mirador/favicon.ico" />
+	</head>
+
+	<body>
+		<div id="main-con">
+			<a href="index.html">
+				<div id="header-con">
+					<div id="img"></div>
+					<div id="title"><h1>mirador</h1></div>
+				</div>
+			</a>	
+			<div id="intro" class="basic manual">
+				<h2>Ebola Data Release</h2>				
+			</div>
+			<div id="body-con" class="basic">
+				<div id="manual-contents" class="topic">
+
+                    <img src="images/ebola-river-gire.jpg"/>
+
+					<h1>The 2014 Ebola Outbreak</h1>
+
+					<p>Since March of 2014, the world has witnessed the largest outbreak of <a href="http://www.cdc.gov/vhf/ebola/">Ebola Virus Disease</a> (EVD) in history, which only now shows <a href="http://www.reuters.com/article/2015/01/21/us-health-ebola-leone-idUSKBN0KU1U920150121">signs</a> of receding. According to the <a href="http://www.who.int/csr/disease/ebola/situation-reports/en/">latest updates</a> from the World Health Organization, more than 20,000 cases and over 8,000 deaths have been reported, with most of them having took place in the West African nations of Sierra Leone, Guinea, and Liberia.</p>
+
+					<p><a href="http://www.nature.com/news/data-sharing-make-outbreak-research-open-access-1.16966">Open access</a> to genetic and clinical data is crucial to understand how Ebola spreads among the human population, to characterize the symptoms predicting mortality, and hopefully to develop an effective vaccine and better patient treatment and care. These goals can only be achieved through active collaboration between goverments, scientists, doctors, humanitarian organizations, and the general public.</p>
+
+					<p>The <a href="http://sabetilab.org/">Sabeti Lab</a> at Harvard University and the Broad Institute publicly released the <a href="http://www.ncbi.nlm.nih.gov/bioproject/257197">viral sequences</a> for the first 78 Ebola patients in Sierra Leone back in July. Since then, the group led by <a href="http://vhfc.org/consortium/people/garry">Robert Garry</a> at Tulane University obtained complementary demographic and clinical metadata for many of those initial patients. Scientists at the Sabeti and Garry labs worked together in the analysis of that data, and the first results from the analysis were reported in the <a href="http://www.nejm.org/doi/full/10.1056/NEJMoa1411680">scientific literature</a>. Here we are releasing the metadata with the hope that interested individuals from all over the world can examine it further and find other associations and trends that might have escaped our analysis and could help in the understanding of the disease.</p>
+ 
+                    <div class="section" id="datasets">
+
+                    <h1>Download the Data</h1>
+
+                    <p>The data is available in four packages: one containing the original raw files in Excel and <a href="http://en.wikipedia.org/wiki/Variant_Call_Format">VCF</a> formats, the second containing the project files that can be loaded directly into Mirador, the third as a single CSV file that can read from virtually any tool, and the fourth as a <a href="http://dataverse.org/">Dataverse</a> hosted on the <a href="http://thedata.harvard.edu/dvn/">Harvard Dataverse Network</a>. The Mirador dataset and the CSV file were generated from the raw files using the scripts available <a href="https://github.com/mirador/ebola-data">here</a>.</p>
+
+                    <div class="datasets" id="raw">
+						<div class="color"></div>
+						<h4>Raw Ebola Data (Excel and VCF formats)</h4>
+						<div class="data-buttons">
+							<a href="https://github.com/mirador/ebola-data/releases/download/1.3/ebola-raw.zip">
+								<div class="data-button down">
+									<h1>Download</h1>
+								</div>
+							</a>
+							<a href="aboutraw.html">
+								<div class="data-button about">
+									<h1>About</h1>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="datasets" id="mira">
+						<div class="color"></div>
+						<h4>Ebola Dataset for Mirador</h4>
+						<div class="data-buttons">
+							<a href="https://github.com/mirador/ebola-data/releases/download/1.3/ebola-mirador.zip">
+								<div class="data-button down">
+									<h1>Download</h1>
+								</div>
+							</a>
+							<a href="aboutmira.html">
+								<div class="data-button about">
+									<h1>About</h1>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="datasets" id="csv">
+						<div class="color"></div>
+						<h4>Ebola Dataset as single CSV file</h4>
+						<div class="data-buttons">
+							<a href="https://github.com/mirador/ebola-data/releases/download/1.3/ebola-data.csv">
+								<div class="data-button down">
+									<h1>Download</h1>
+								</div>
+							</a>
+							<a href="aboutcsv.html">
+								<div class="data-button about">
+									<h1>About</h1>
+								</div>
+							</a>
+						</div>
+					</div>					
+
+					<div class="datasets" id="verse">
+						<div class="color"></div>
+						<h4>Ebola Dataverse hosted on the Harvard Dataverse Network</h4>
+						<div class="data-buttons">
+							<a href="http://thedata.harvard.edu/dvn/dv/ebola">
+								<div class="data-button down">
+									<h1>Open</h1>
+								</div>
+							</a>
+							<a href="http://dataverse.org/about/">
+								<div class="data-button about">
+									<h1>About</h1>
+								</div>
+							</a>
+						</div>
+					</div>					
+
+					<br style="clear:both" />
+				    </div>
+
+					<h1>How to Use the Data</h1>
+					<p>The raw data can be used with any software for statistical analysis, as well as the single CSV file. The Dataverse offers <a href="http://thedata.harvard.edu/dvn/dv/ebola/faces/subsetting/SubsettingPage.xhtml?dtId=93727&versionNumber=1&studyListingIndex=12_c19baed82039311aefe758cb8eaa">several options</a> for descriptive statistics and advanced analysis. The Mirador dataset is specially formatted to load into the tool <a href="http://fathom.info/mirador/">Mirador</a> to conduct exploratory analysis and identify hypothesis of statistical association. A few ideas on the type of analysis that could be done with this data:</p>
+
+                    <ul>
+                        <li><p>We used date and location information to establish transmission chains. Other questions to answer: Are mortality rates higher in some places more than others? Are there any symptoms that are more common in specific areas?</p></li>
+                        <li><p>There are several correlations in this data that link outcome with several clinical and laboratory variables, such as temperature and viral load. What other associatons can be found? Which of these correlations indicate a real causal relationship?</p></li>
+                        <li><p>Is it possible to use this data to build a predictive model of Ebola prognosis? What variables should be incorporated in such model and why?</p> </li> 
+                    </ul>
+
+                    <h1>Loading the Data into Mirador</h1>
+
+                    <p>In order to load this data in Mirador, we first need to download the zip package for Mirador from the appropriate link above, and then uncompress it. Opening the dataset from Mirador should result in a window similar to the following:</p>
+
+                    <img src="images/mirador-ebola1.png"/>
+
+					<p>If we set the Ebola Diagnosis variable as a covariate, restricting the visualization only to Ebola-positive patients, and scrolling to Outcome in the rows and Temperature in the columns, we can inspect the dependency between these two variables, and see that all patients with temperatures over 38 degrees at admission eventually died:</p>
+
+                    <!-- <img src="images/mirador-ebola2.png"/> -->
+                    <iframe src="//player.vimeo.com/video/114270924?title=0&amp;byline=0&amp;portrait=0&amp;color=D6DE23" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>                 
+
+					<p>Please check the <a href="http://fathom.info/mirador/videos.html">tutorial videos</a> and the <a href="http://fathom.info/mirador/manual.html">manual</a> to get more information on how to use Mirador to visualize and explore correlations in the Ebola data. You can also contact us <a href="mailto:andres@broadinstitute.org?Subject=Mirador Ebola Data" target="_top">by email</a> with any questions related to Mirador and the data. Also, if you find a bug in the software, please report it in the <a href="https://github.com/mirador/mirador/issues">github page</a>.</p>
+
+					<h1>More information</h1>
+
+                    <p>Ethics committees in Sierra Leone and the U.S. have approved the study of this clinical data, which has been collected as part of routine patient care and de-identified to protect patient privacy.</p>
+
+                    <p>The image at the top of the page is an artistic rendition of the Congo River by <a href="http://skgire.4ormat.com/">Stephen Gire</a>, where the shape of the river was created to take the form of the Ebola virus. Originally published <a href="http://www.sciencemag.org/content/338/6108/750.summary">here</a>.</p>
+				</div>
+			</div>
+			<div id="footer" class="basic">
+				<p>Copyright © 2014-17 Fathom Information Design. All Rights Reserved.</p>
+			</div>
+		</div>
+	</body>
+</html>

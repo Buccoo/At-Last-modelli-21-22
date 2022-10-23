@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>ebola: prognosis prediction</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="icon" type="image/ico" href="http://fathom.info/mirador/favicon.ico" />
+	</head>
+
+	<body>
+		<div id="main-con">
+			<a href="index.html">
+				<div id="header-con">
+					<div id="img"></div>
+					<div id="title"><h1>mirador</h1></div>
+				</div>
+			</a>	
+			<div id="intro" class="basic manual">
+				<h2>Ebola Prognosis Prediction</h2>				
+			</div>
+			<div id="body-con" class="basic">
+				<div id="manual-contents" class="topic">
+
+                    <img src="images/ebola-tablet-msf.jpg"/>
+ 
+					<h1>Computational Prognosis of Infectious Diseases</h1>
+
+                    <p>Based on publicly available <a href="http://fathom.info/mirador/ebola/datarelease">clinical data</a> of Ebola Virus Disease (EVD) patients from Sierra Leone, we developed a computational framework that integrates <a href="http://fathom.info/mirador/">exploratory visualization tools</a> with a flexible <a href="https://github.com/broadinstitute/ebola-predictor">Machine Learning (ML) pipeline</a>. The goal of this approach is to construct predictive models that could help health care workers in the field to better prognosticate and treat patients. These models would complement rapid diagnostics kits (such as <a href="http://news.harvard.edu/gazette/story/2015/06/diagnosing-ebola-in-minutes/?utm_source=SilverpopMailing&utm_medium=email&utm_campaign=06.26.2015%20%281%29">this one</a> and <a href="http://newsoffice.mit.edu/2015/ten-minute-ebola-test-0224">this other one</a>) and <a href="http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/">data-entry devices</a>, and thus closing a loop linking data visualization and statistical modeling with patient treatment and data collection:</p>
+
+                    <img src="images/dataloop.png"/>
+
+                    <p>Direct actionable knowledge obtained from outbreak data would further encourage collection of more and better data, as well as <a href="http://www.nature.com/news/data-sharing-make-outbreak-research-open-access-1.16966">open access</a> needed for rapid outbreak detection and response. We have made the source code of our ML pipeline fully available and documented on <a href="https://github.com/broadinstitute/ebola-predictor">Github</a>, to enable independent validation and improvement of the EVD prognosis models, a crucial element of prognosis research discussed in <a href="http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001671">this article</a> from the <a href="http://progress-partnership.org/">PROGRESS partnership</a>.</p>
+
+                    <h1>Ebola CARE app</h1>
+                    
+                    <p>The predictive models for EVD prognosis generated with our ML pipeline are packaged as a free mobile app for <a href="https://play.google.com/store/apps/details?id=org.broadinstitute.ebolacare">Android</a> and <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1035189121&mt=8">Apple</a> smartphones, called Ebola CARE (Computational Assignment of Risk Estimates). This app can be easily updated to reflect newer models trained with more complete clinical data from EVD patients.</p>
+
+                    <a href="https://play.google.com/store/apps/details?id=org.broadinstitute.ebolacare"><img src="images/careapp-android.png"/></a>
+
+                    <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1035189121&mt=8"><img src="images/careapp-ios.png"/></a>
+
+                    <h1>More information</h1>
+
+                    <p>An open-access paper describing this research has been published in PLOS Neglected Tropical Diseases, and can be read and downloaded from <a href="http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004549">this page</a>.</p>
+
+                    <p>App UI design: <a href="http://kallirroiretzepi.com/">Kallirroi Retzepi</a>.
+
+                    <p>Image credits: <a href="http://www.msf.org/">Médecins Sans Frontières</a>, <a href="http://freakonometrics.hypotheses.org/19286"/>Freakonometrics</a>.
+                    </p>
+				</div>
+			</div>
+			<div id="footer" class="basic">
+				<p>Copyright © 2014-17 Fathom Information Design. All Rights Reserved.</p>
+			</div>
+		</div>
+	</body>
+</html>
