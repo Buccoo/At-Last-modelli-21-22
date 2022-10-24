@@ -8,6 +8,11 @@
     <artifactId>mirador</artifactId>
     <version>1.5.2</version>
     
+<properties>
+  <sonar.organization>admin0</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
+
     <name>mirador</name>
     <url>https://fathom.info/mirador</url>    
     
